@@ -1,6 +1,6 @@
 #!/bin/bash
 
-readonly thisDir=$(dirname $0)
+readonly thisDir=$(dirname "$(realpath $0)")
 
 createLink() {
     ln -insr $thisDir/$1 ~/"$1"
