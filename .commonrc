@@ -21,6 +21,8 @@ alias gup="git pull"
 alias gr='git review'
 alias gsu="git submodule update"
 
-__git_complete g __git_main
-__git_complete gco _git_checkout
+if type __git_complete > /dev/null 2>&1; then
+  __git_complete g __git_main
+  __git_complete gco _git_checkout
+fi
 
