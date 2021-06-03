@@ -42,7 +42,7 @@ This function should only modify configuration layer settings."
             c-c++-adopt-subprojects t
             c-c++-backend 'lsp-clangd
             c-c++-enable-clang-format-on-save t
-            lsp-clients-clangd-args '("-j=15" "--log=info" "--background-index" "--clang-tidy" "--pch-storage=memory"))
+            lsp-clients-clangd-args '("-j=15" "--log=info" "--background-index" "--clang-tidy" "--pch-storage=memory" "--header-insertion=never"))
      lsp
      yaml
      python
