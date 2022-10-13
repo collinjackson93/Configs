@@ -1,5 +1,10 @@
 syntax enable
-colorscheme delek
+" colorschemes changed with vim 9.0 and delek is now light background
+if v:version >= 900
+  colorscheme desert
+else
+  colorscheme delek
+endif
 " use fd to get out of insert mode
 inoremap fd <Esc>
 set nowrap        " don't soft-wrap lines
