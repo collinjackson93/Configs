@@ -587,6 +587,7 @@ This function is called at the very end of Spacemacs startup, after layer
 configuration.
 Put your configuration code here, except for variables that should be set
 before packages are loaded."
+  (add-to-list 'image-types 'svg)
   (setq projectile-enable-caching t)
   (setq projectile-indexing-method 'hybrid)
   (setq make-backup-files nil)
