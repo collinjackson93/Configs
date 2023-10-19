@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: Binary Yaml Field
+# key: name
+# --
+- { name: $1, attrib: { length: $2, type: $3 } }$0
